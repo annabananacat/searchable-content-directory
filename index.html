@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Explore curated resources for design, development, and accessibility.">
+
+  <title>Resource Library | Discover & Learn</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="nav-container" aria-label="Main navigation">
+
+      <a href="#" class="brand" aria-label="Resource Library home">
+        <span class="brand-icon" aria-hidden="true">✳</span>
+        <span>resource<span class="brand-accent">library.</span></span>
+      </a>
+
+      <span class="nav-label">A curated knowledge hub</span>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="heroHeading">
+
+      <div class="hero-content">
+        <span class="eyebrow">EXPLORE. DISCOVER. LEARN.</span>
+
+        <h1 id="heroHeading">
+          Good resources.<br>
+          <span class="hero-accent">Better ideas.</span>
+        </h1>
+
+        <p class="hero-description">
+          A thoughtfully curated collection of articles, guides,
+          and tools to help you build more accessible, useful,
+          and beautiful digital experiences.
+        </p>
+      </div>
+
+      <div class="hero-decoration" aria-hidden="true">
+        <span class="decoration-circle circle-one"></span>
+        <span class="decoration-circle circle-two"></span>
+        <span class="decoration-circle circle-three"></span>
+      </div>
+
+    </section>
+
+    <!-- Directory -->
+    <section class="directory" aria-labelledby="directoryHeading">
+
+      <div class="directory-heading">
+        <div>
+          <span class="section-eyebrow">THE COLLECTION</span>
+          <h2 id="directoryHeading">Explore the library</h2>
+          <p>Find exactly what you're looking for.</p>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="search-container">
+
+        <label for="searchInput">Search resources</label>
+
+        <div class="search-wrapper">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Try JavaScript, accessibility, UX design..."
+            autocomplete="off"
+            aria-autocomplete="list"
+            aria-controls="searchSuggestions"
+            aria-expanded="false"
+          >
+        </div>
+
+        <!-- Predictive Search Suggestions -->
+        <ul
+          id="searchSuggestions"
+          class="search-suggestions"
+          role="listbox"
+          aria-label="Search suggestions"
+          hidden>
+        </ul>
+
+      </div>
+
+      <!-- Filters and Sorting -->
+      <div class="toolbar">
+
+        <div class="filter-container"
+             role="group"
+             aria-label="Filter resources by category">
+
+          <button type="button"
+                  class="filter-btn active"
+                  data-category="all"
+                  aria-pressed="true">
+            All resources
+          </button>
+
+          <button type="button"
+                  class="filter-btn"
+                  data-category="Design"
+                  aria-pressed="false">
+            Design
+          </button>
+
+          <button type="button"
+                  class="filter-btn"
+                  data-category="Development"
+                  aria-pressed="false">
+            Development
+          </button>
+
+          <button type="button"
+                  class="filter-btn"
+                  data-category="Accessibility"
+                  aria-pressed="false">
+            Accessibility
+          </button>
+
+        </div>
+
+        <div class="sort-container">
+          <label for="sortSelect">Sort by</label>
+
+          <select id="sortSelect">
+            <option value="default">Featured</option>
+            <option value="az">Title: A to Z</option>
+            <option value="za">Title: Z to A</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Results -->
+      <div class="results-header">
+        <h3>All resources</h3>
+
+        <p id="resultsCount" role="status" aria-live="polite">
+          Showing 8 of 8 resources
+        </p>
+      </div>
+
+      <!-- Resource Cards -->
+      <div class="resource-grid">
+
+        <article class="resource-card">
+          <span class="category">Design</span>
+          <h3>Introduction to UX Design</h3>
+          <p>
+            Explore the foundations of user experience,
+            usability, and human-centered design.
+          </p>
+          <a href="https://www.nngroup.com/articles/definition-user-experience/"
+             target="_blank" rel="noopener noreferrer">
+            Explore resource <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="resource-card">
+          <span class="category">Development</span>
+          <h3>HTML &amp; CSS Fundamentals</h3>
+          <p>
+            Learn the essential technologies behind
+            responsive, modern websites.
+          </p>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+             target="_blank" rel="noopener noreferrer">
+            Explore resource <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="resource-card">
+          <span class="category">Accessibility</span>
+          <h3>Web Accessibility Basics</h3>
+          <p>
+            Understand how to create inclusive digital
+            experiences for people of all abilities.
+          </p>
+          <a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+             target="_blank" rel="noopener noreferrer">
+            Explore resource <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="resource-card">
+          <span class="category">Development</span>
+          <h3>JavaScript Essentials</h3>
+          <p>
+            Discover how JavaScript powers interactive
+            and dynamic web experiences.
+          </p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+             target="_blank" rel="noopener noreferrer">
+            Explore resource <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="resource-card">
+          <span class="category">Design</span>
+          <h3>Design Systems</h3>
+          <p>
+            Learn how reusable components and consistent
+            patterns improve digital products.
+          </p>
+          <a href="https://www.designsystems.com/"
+             target="_blank" rel="noopener noreferrer">
+            Explore resource <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="resource-card">
+          <span class="category">Accessibility</span>
+          <h3>WCAG Guidelines</h3>
+          <p>
+            Explore international accessibility standards
+            and practical implementation guidance.
+          </p>
+          <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+             target="_blank" rel="noopener noreferrer">
+            Explore resource <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="resource-card">
+          <span class="category">Development</span>
+          <h3>Responsive Web Design</h3>
+          <p>
+            Build flexible layouts that adapt beautifully
+            across mobile, tablet, and desktop devices.
+          </p>
+          <a href="https://web.dev/learn/design"
+             target="_blank" rel="noopener noreferrer">
+            Explore resource <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="resource-card">
+          <span class="category">Design</span>
+          <h3>Usability Heuristics</h3>
+          <p>
+            Discover ten foundational principles for
+            evaluating and improving user interfaces.
+          </p>
+          <a href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+             target="_blank" rel="noopener noreferrer">
+            Explore resource <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Empty State -->
+      <div id="noResults" class="no-results" hidden>
+        <div class="empty-icon" aria-hidden="true">⌕</div>
+
+        <h3>No resources found</h3>
+
+        <p>
+          We couldn't find a match. Try another search
+          or explore a different category.
+        </p>
+
+        <button type="button" id="clearFilters">
+          Clear filters
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Resource Library — Built with accessibility and curiosity in mind.</p>
+    <p>Designed &amp; developed with care.</p>
+  </footer>
+
+</body>
+</html>
