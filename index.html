@@ -1,12 +1,12 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description"
-        content="Explore curated resources for design, development, and accessibility.">
+  <meta name="description" content="Explore curated resources for design, development, and accessibility.">
 
   <title>Resource Library | Discover & Learn</title>
 
@@ -78,11 +78,14 @@
           <span class="search-icon" aria-hidden="true">⌕</span>
 
           <input
-            type="search"
+            type="text"
+            inputmode="search"
             id="searchInput"
-            placeholder="Try JavaScript, accessibility, UX design..."
+            placeholder="Search resources..."
             autocomplete="off"
+            role="combobox"
             aria-autocomplete="list"
+            aria-haspopup="listbox"
             aria-controls="searchSuggestions"
             aria-expanded="false"
           >
@@ -94,43 +97,29 @@
           class="search-suggestions"
           role="listbox"
           aria-label="Search suggestions"
-          hidden>
-        </ul>
+          hidden
+        ></ul>
 
       </div>
 
       <!-- Filters and Sorting -->
       <div class="toolbar">
 
-        <div class="filter-container"
-             role="group"
-             aria-label="Filter resources by category">
+        <div class="filter-container" role="group" aria-label="Filter resources by category">
 
-          <button type="button"
-                  class="filter-btn active"
-                  data-category="all"
-                  aria-pressed="true">
+          <button type="button" class="filter-btn active" data-category="all" aria-pressed="true">
             All resources
           </button>
 
-          <button type="button"
-                  class="filter-btn"
-                  data-category="Design"
-                  aria-pressed="false">
+          <button type="button" class="filter-btn" data-category="Design" aria-pressed="false">
             Design
           </button>
 
-          <button type="button"
-                  class="filter-btn"
-                  data-category="Development"
-                  aria-pressed="false">
+          <button type="button" class="filter-btn" data-category="Development" aria-pressed="false">
             Development
           </button>
 
-          <button type="button"
-                  class="filter-btn"
-                  data-category="Accessibility"
-                  aria-pressed="false">
+          <button type="button" class="filter-btn" data-category="Accessibility" aria-pressed="false">
             Accessibility
           </button>
 
@@ -167,8 +156,11 @@
             Explore the foundations of user experience,
             usability, and human-centered design.
           </p>
+
           <a href="https://www.nngroup.com/articles/definition-user-experience/"
-             target="_blank" rel="noopener noreferrer">
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Explore resource: Introduction to UX Design (opens in a new tab)">
             Explore resource <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -180,8 +172,11 @@
             Learn the essential technologies behind
             responsive, modern websites.
           </p>
+
           <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
-             target="_blank" rel="noopener noreferrer">
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Explore resource: HTML and CSS Fundamentals (opens in a new tab)">
             Explore resource <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -193,8 +188,11 @@
             Understand how to create inclusive digital
             experiences for people of all abilities.
           </p>
+
           <a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
-             target="_blank" rel="noopener noreferrer">
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Explore resource: Web Accessibility Basics (opens in a new tab)">
             Explore resource <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -206,8 +204,11 @@
             Discover how JavaScript powers interactive
             and dynamic web experiences.
           </p>
+
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
-             target="_blank" rel="noopener noreferrer">
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Explore resource: JavaScript Essentials (opens in a new tab)">
             Explore resource <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -219,8 +220,11 @@
             Learn how reusable components and consistent
             patterns improve digital products.
           </p>
+
           <a href="https://www.designsystems.com/"
-             target="_blank" rel="noopener noreferrer">
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Explore resource: Design Systems (opens in a new tab)">
             Explore resource <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -232,8 +236,11 @@
             Explore international accessibility standards
             and practical implementation guidance.
           </p>
+
           <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"
-             target="_blank" rel="noopener noreferrer">
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Explore resource: WCAG Guidelines (opens in a new tab)">
             Explore resource <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -245,8 +252,11 @@
             Build flexible layouts that adapt beautifully
             across mobile, tablet, and desktop devices.
           </p>
+
           <a href="https://web.dev/learn/design"
-             target="_blank" rel="noopener noreferrer">
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Explore resource: Responsive Web Design (opens in a new tab)">
             Explore resource <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -258,8 +268,11 @@
             Discover ten foundational principles for
             evaluating and improving user interfaces.
           </p>
+
           <a href="https://www.nngroup.com/articles/ten-usability-heuristics/"
-             target="_blank" rel="noopener noreferrer">
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Explore resource: Usability Heuristics (opens in a new tab)">
             Explore resource <span aria-hidden="true">→</span>
           </a>
         </article>
@@ -293,4 +306,5 @@
   </footer>
 
 </body>
+
 </html>
