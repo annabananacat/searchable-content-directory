@@ -4,6 +4,16 @@
 A responsive, searchable resource directory built with
 HTML, CSS, and JavaScript.
 
+
+## Project Links
+
+- [Live Demo](https://annabananacat.github.io/searchable-content-directory/)
+- [GitHub Repository](https://github.com/annabananacat/searchable-content-directory)
+
+## Project Preview
+
+![Resource Library website preview](screenshot.png)
+
 ## Overview
 
 Resource Library is a curated collection of articles,
