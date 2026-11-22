@@ -12,7 +12,7 @@ HTML, CSS, and JavaScript.
 
 ## Project Preview
 
-![Resource Library website preview](screenshot.png)
+![Resource Library website preview](images/screenshot.png)
 
 ## Overview
 
