@@ -1,9 +1,7 @@
 
 # Resource Library
 
-A responsive, searchable resource directory built with
-HTML, CSS, and JavaScript.
-
+A responsive, searchable resource directory built with HTML, CSS, and JavaScript.
 
 ## Project Links
 
@@ -12,21 +10,17 @@ HTML, CSS, and JavaScript.
 
 ## Project Preview
 
-![Resource Library website preview](images/screenshot.png)
+![Resource Library website preview](./Images/screenshot.png)
 
 ## Overview
 
-Resource Library is a curated collection of articles,
-guides, and tools covering UX design, frontend development,
-and web accessibility.
+Resource Library is a curated collection of articles, guides, and tools covering UX design, frontend development, and web accessibility.
 
-The project focuses on creating an intuitive, accessible
-experience for discovering and exploring educational resources.
+The project focuses on creating an intuitive, accessible experience for discovering and exploring educational resources.
 
 ## Features
 
-- Real-time search across resource titles, categories,
-  and descriptions
+- Real-time search across resource titles, categories, and descriptions
 - Predictive search suggestions
 - Keyboard-accessible autocomplete navigation
 - Category filtering
@@ -44,19 +38,26 @@ experience for discovering and exploring educational resources.
 - JavaScript (ES6+)
 - CSS Grid and Flexbox
 - ARIA attributes
+- Git and GitHub Pages
 
 ## UX and Accessibility Considerations
 
-The interface uses a consistent Sage & Forest design
-system with reusable CSS variables, clear visual hierarchy,
-and responsive resource cards.
+The interface uses a consistent Sage & Forest design system with reusable CSS variables, clear visual hierarchy, and responsive resource cards.
 
-Search suggestions support arrow-key navigation, Enter
-selection, and Escape dismissal.
+Search suggestions support arrow-key navigation, Enter selection, and Escape dismissal.
 
-The directory provides feedback through a dynamic results
-counter and an empty state when no matching resources
-are found.
+The search interface uses accessible combobox semantics to communicate available suggestions to assistive technologies.
+
+The directory provides feedback through a dynamic results counter and an empty state when no matching resources are found.
+
+Resource links include descriptive accessible names and new-tab announcements.
+
+## Testing
+
+- Desktop and mobile responsive testing
+- Keyboard navigation testing
+- Search, filtering, and sorting functionality testing
+- Chrome Lighthouse accessibility auditing
 
 ## Running Locally
 
